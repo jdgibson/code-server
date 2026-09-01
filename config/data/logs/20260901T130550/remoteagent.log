@@ -1,7 +1,0 @@
-2026-09-01 13:05:50.063 [info] 
-
-
-
-
-2026-09-01 13:05:50.070 [info] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: /tmp/vscode-ipc-8f62c3b7-bc7a-4e77-9977-1c6bef5937e9.sock)
-2026-09-01 13:05:50.072 [info] Extension host agent started.
