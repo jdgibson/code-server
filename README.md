@@ -2,7 +2,7 @@
 
 This repository includes a small Docker workflow for running [code-server](https://github.com/coder/code-server), a browser-accessible VS Code environment. The container is based on the LinuxServer.io image and mounts this repository into the editor at `/workspace`, so edits made in code-server are applied directly to the files on the host.
 
-The workflow is defined in the [Makefile](Makefile). It is intended for local development where Docker provides the editor runtime while the repository remains on the host machine.
+The workflow is defined in the [Makefile](Makefile). It supports both local development and a persistent deployment on `docker-nuc.mmto.arizona.edu`, where Traefik publishes code-server at `https://subsystem.mmto.arizona.edu/code-server/`.
 
 ## What starts
 
@@ -77,6 +77,54 @@ docker ps --filter name=code-server-dev
 
 `make stop-dev` removes the container but does not delete the repository files, because they are stored in the host directory mounted at `/workspace`.
 
+## Persistent docker-nuc deployment
+
+The [docker-compose.yml](docker-compose.yml) service is the persistent deployment for `docker-nuc.mmto.arizona.edu`. It has two persistent data sources:
+
+- The repository directory is bind-mounted to `/workspace`, so code and edits remain in the checkout on docker-nuc.
+- The named Docker volume `code-server-config` is mounted at `/config`, preserving code-server settings, extensions, and user data across container recreation.
+
+The service joins the existing external `traefik` Docker network. Traefik routes `https://subsystem.mmto.arizona.edu/code-server/` to port `8443` in the container, strips `/code-server` before forwarding, requests TLS through the `letsencrypt` certificate resolver, and applies the shared `authelia@file` authentication middleware.
+
+Run the remote targets from this repository's checkout **on** `docker-nuc.mmto.arizona.edu`. Docker bind mounts are paths on the Docker daemon's host, so Compose does not copy a local checkout to docker-nuc.
+
+```sh
+# Connect to docker-nuc and change to this repository's checkout.
+ssh docker-nuc.mmto.arizona.edu
+cd /path/to/code-server
+
+# Start or update the persistent service on docker-nuc.
+make deploy-nuc
+
+# View its status or follow its logs.
+make status-nuc
+make logs-nuc
+
+# Stop and remove the service. The workspace and code-server-config volume remain.
+make stop-nuc
+```
+
+After deployment, browse to:
+
+```
+https://subsystem.mmto.arizona.edu/code-server/
+```
+
+Authelia authenticates the request before it reaches code-server. Do not publish an additional host port for this service; Traefik is the intended entry point.
+
+### Remote deployment requirements
+
+- The checkout must exist on `docker-nuc.mmto.arizona.edu` and the Make targets must be run from that checkout.
+- Docker Compose must be installed on docker-nuc, and the user running Make must have permission to manage Docker.
+- The remote Docker daemon must have an external network named `traefik` and a Traefik instance that recognizes the `websecure`, `letsencrypt`, and `authelia@file` conventions.
+- SSH access to `docker-nuc.mmto.arizona.edu` must be configured for the deployment user.
+
+Override the Traefik network only when the deployment environment differs:
+
+```sh
+make deploy-nuc TRAEFIK_NETWORK=traefik
+```
+
 ## Override defaults
 
 The Makefile defines `CONTAINER_NAME`, `IMAGE`, and `PORT` as overridable variables. Supply an assignment on the same command line when starting the container.
@@ -122,7 +170,7 @@ If they differ from `1000`, update the `PUID` and `PGID` values in the Makefile 
 
 - The image is referenced as `latest`; starting a new container after an image update can change the installed code-server version. Pin `IMAGE` to a tag when reproducibility matters.
 - The Makefile uses `docker run`, not Docker Compose. Starting a second time while `code-server-dev` already exists fails with a name-conflict error. Stop the existing instance first, or choose another `CONTAINER_NAME`.
-- Container configuration that is not stored under `/workspace` is removed by `make stop-dev`, because the command removes the container and the Makefile does not mount a separate configuration volume.
+- The local `docker run` workflow does not retain code-server configuration outside `/workspace`. The Compose deployment uses the `code-server-config` named volume specifically to retain that configuration.
 - The published port binds according to Docker's default behavior. Treat it as a local-development service unless you have intentionally configured network exposure, authentication, and TLS.
 
 ## Troubleshooting

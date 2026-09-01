@@ -1,0 +1,34 @@
+services:
+  code-server:
+    image: ${IMAGE:-lscr.io/linuxserver/code-server:latest}
+    container_name: ${CONTAINER_NAME:-code-server}
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-Etc/UTC}
+      DEFAULT_WORKSPACE: /workspace
+    volumes:
+      - ${WORKSPACE_DIR:-.}:/workspace
+      - code-server-config:/config
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    networks:
+      - traefik
+    deploy:
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=${TRAEFIK_NETWORK:-traefik}
+        - traefik.http.routers.code-server.entrypoints=websecure
+        - traefik.http.routers.code-server.rule=Host(`${CODE_SERVER_HOST:-subsystem.mmto.arizona.edu}`) && PathPrefix(`${CODE_SERVER_PATH:-/code-server}`)
+        - traefik.http.routers.code-server.tls.certresolver=letsencrypt
+        - traefik.http.routers.code-server.middlewares=code-server-stripprefix,authelia@file
+        - traefik.http.middlewares.code-server-stripprefix.stripprefix.prefixes=${CODE_SERVER_PATH:-/code-server}
+        - traefik.http.services.code-server.loadbalancer.server.port=8443
+
+volumes:
+  code-server-config:
+
+networks:
+  traefik:
+    external: true
+    name: ${TRAEFIK_NETWORK:-traefik}
