@@ -1,0 +1,12 @@
+2026-09-01 13:11:52.467 [info] Extension host with pid 385 started
+2026-09-01 13:11:52.467 [error] Error: EEXIST: file already exists, open '/config/data/User/workspaceStorage/f000067/vscode.lock'
+2026-09-01 13:11:52.467 [info] Lock '/config/data/User/workspaceStorage/f000067/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-09-01 13:11:52.470 [info] Lock '/config/data/User/workspaceStorage/f000067/vscode.lock': The lock does not look stale, elapsed: 607 ms, giving up.
+2026-09-01 13:11:52.473 [info] Lock '/config/data/User/workspaceStorage/f000067-1/vscode.lock': Lock acquired.
+2026-09-01 13:11:52.516 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-09-01 13:11:52.517 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-09-01 13:11:52.602 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2026-09-01 13:11:52.621 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-09-01 13:11:52.725 [info] Eager extensions activated
+2026-09-01 13:11:52.726 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-09-01 13:11:52.726 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'

@@ -1,0 +1,24 @@
+2026-09-01 13:03:02.112 [info] Agent Host process started successfully
+2026-09-01 13:03:02.134 [info] AgentService initialized
+2026-09-01 13:03:02.138 [info] Registering agent provider: copilotcli
+2026-09-01 13:03:02.146 [info] [Copilot] Listing discoverable chats...
+2026-09-01 13:03:02.148 [info] [Copilot] Starting CopilotClient...
+2026-09-01 13:03:02.149 [info] [Copilot] Set CLI env: GITHUB_COPILOT_INTEGRATION_ID=code-oss
+2026-09-01 13:03:02.164 [info] [WebSocketProtocol] Server listening on socket /tmp/vscode-ipc-6b024fa4-780f-4c88-a132-806ed66617c6.sock
+2026-09-01 13:03:02.164 [info] [AgentHost] WebSocket server listening on /tmp/vscode-ipc-6b024fa4-780f-4c88-a132-806ed66617c6.sock
+2026-09-01 13:03:02.166 [info] [Copilot] Resolved CLI path: /app/code-server/lib/vscode/node_modules/@github/copilot-linux-x64/index.js
+2026-09-01 13:03:02.193 [info] [CommandAutoApprover] Tree-sitter initialized (bash=available, powershell=available)
+2026-09-01 13:03:02.200 [info] [Copilot] Listing chats to migrate...
+2026-09-01 13:03:02.434 [info] [ProtocolServer] Initialize: clientId=73c9ad07-b1e1-4fa1-a9a6-eb025fd0265b, protocolVersions=[1.0.0, 0.8.0, 0.7.0, 0.6.0, 0.5.2, 0.5.1]
+2026-09-01 13:03:02.557 [info] [AgentService] showExternalSessions changed 'none' -> 'recent'; queueing session list reconciliation
+2026-09-01 13:03:02.960 [info] [Copilot] CopilotClient started successfully
+2026-09-01 13:03:02.962 [info] [Copilot] Listed 0 SDK session(s) for discoverable chats
+2026-09-01 13:03:02.962 [info] [Copilot] Listed 0 SDK session(s) for chats to migrate
+2026-09-01 13:03:02.963 [info] [Copilot] Found 0 legacy sessions
+2026-09-01 13:03:02.963 [info] [Copilot] Chat discovery: 0 SDK session(s) -> 0 external, 0 adoptable legacy extension-host, 0 suppressed adoptable legacy extension-host, 0 suppressed archived legacy extension-host, 0 already known to Agent Host, 0 without a working directory, 0 with unsupported or missing client name, 0 outside the import window, 0 without repository metadata, 0 failed to classify (adopt legacy extension-host chats: false)
+2026-09-01 13:03:02.969 [info] [AgentService] pruned 0 stale external session row(s) older than 30 days
+2026-09-01 13:03:48.927 [info] [ProtocolServer] Client disconnected: 73c9ad07-b1e1-4fa1-a9a6-eb025fd0265b, subscriptions=1
+2026-09-01 13:03:49.585 [info] [ProtocolServer] Initialize: clientId=7d77f6de-88a1-43a5-a640-621ea7aa2427, protocolVersions=[1.0.0, 0.8.0, 0.7.0, 0.6.0, 0.5.2, 0.5.1]
+2026-09-01 13:04:38.411 [info] [ProtocolServer] Initialize: clientId=e8c6a573-0f7f-4d00-951b-f4aeda06fda1, protocolVersions=[1.0.0, 0.8.0, 0.7.0, 0.6.0, 0.5.2, 0.5.1]
+2026-09-01 13:05:41.523 [info] [ProtocolServer] Client disconnected: 7d77f6de-88a1-43a5-a640-621ea7aa2427, subscriptions=1
+2026-09-01 13:05:41.523 [info] [ProtocolServer] Client disconnected: e8c6a573-0f7f-4d00-951b-f4aeda06fda1, subscriptions=1

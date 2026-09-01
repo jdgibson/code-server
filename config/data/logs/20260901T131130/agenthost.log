@@ -1,0 +1,18 @@
+2026-09-01 13:11:33.875 [info] Agent Host process started successfully
+2026-09-01 13:11:33.906 [info] AgentService initialized
+2026-09-01 13:11:33.911 [info] Registering agent provider: copilotcli
+2026-09-01 13:11:33.920 [info] [Copilot] Listing discoverable chats...
+2026-09-01 13:11:33.923 [info] [Copilot] Starting CopilotClient...
+2026-09-01 13:11:33.923 [info] [Copilot] Set CLI env: GITHUB_COPILOT_INTEGRATION_ID=code-oss
+2026-09-01 13:11:33.940 [info] [WebSocketProtocol] Server listening on socket /tmp/vscode-ipc-ab34482d-3598-4418-871d-dc13b89792f1.sock
+2026-09-01 13:11:33.941 [info] [AgentHost] WebSocket server listening on /tmp/vscode-ipc-ab34482d-3598-4418-871d-dc13b89792f1.sock
+2026-09-01 13:11:33.943 [info] [Copilot] Resolved CLI path: /app/code-server/lib/vscode/node_modules/@github/copilot-linux-x64/index.js
+2026-09-01 13:11:33.969 [info] [CommandAutoApprover] Tree-sitter initialized (bash=available, powershell=available)
+2026-09-01 13:11:34.116 [info] [ProtocolServer] Initialize: clientId=32e0b2c0-5f27-4636-8dae-3379f57d279b, protocolVersions=[1.0.0, 0.8.0, 0.7.0, 0.6.0, 0.5.2, 0.5.1]
+2026-09-01 13:11:34.319 [info] [AgentService] pruned 0 stale external session row(s) older than 30 days
+2026-09-01 13:11:34.715 [info] [Copilot] CopilotClient started successfully
+2026-09-01 13:11:34.716 [info] [Copilot] Listed 0 SDK session(s) for discoverable chats
+2026-09-01 13:11:34.716 [info] [Copilot] Chat discovery: 0 SDK session(s) -> 0 external, 0 adoptable legacy extension-host, 0 suppressed adoptable legacy extension-host, 0 suppressed archived legacy extension-host, 0 already known to Agent Host, 0 without a working directory, 0 with unsupported or missing client name, 0 outside the import window, 0 without repository metadata, 0 failed to classify (adopt legacy extension-host chats: false)
+2026-09-01 13:11:46.402 [info] [ProtocolServer] Client disconnected: 32e0b2c0-5f27-4636-8dae-3379f57d279b, subscriptions=1
+2026-09-01 13:11:48.414 [info] [ProtocolServer] Initialize: clientId=b9fb8fb6-cd6d-4e47-a69f-ce13786cd079, protocolVersions=[1.0.0, 0.8.0, 0.7.0, 0.6.0, 0.5.2, 0.5.1]
+2026-09-01 13:11:52.048 [info] [ProtocolServer] Initialize: clientId=de8b2bf1-8d15-44e2-aa1a-53950e4aaac1, protocolVersions=[1.0.0, 0.8.0, 0.7.0, 0.6.0, 0.5.2, 0.5.1]

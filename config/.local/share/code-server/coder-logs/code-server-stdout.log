@@ -1,0 +1,103 @@
+[2026-09-01T20:02:58.009Z] info  code-server 4.135.0 de89acbcdce9d9b870008a270c9f6466993d91f4
+[2026-09-01T20:02:58.009Z] info  Using user-data-dir /config/data
+[2026-09-01T20:02:58.020Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-09-01T20:02:58.020Z] info  HTTP server listening on http://[::]:8443/
+[2026-09-01T20:02:58.020Z] info    - Authentication is disabled
+[2026-09-01T20:02:58.020Z] info    - Not serving HTTPS
+[2026-09-01T20:02:58.020Z] info  Session server listening on /config/data/code-server-ipc.sock
+[13:02:59] 
+
+
+
+
+[reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[13:02:59] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: /tmp/vscode-ipc-6b024fa4-780f-4c88-a132-806ed66617c6.sock)
+[13:02:59] Extension host agent started.
+[13:02:59] Started initializing default profile extensions in extensions installation folder. file:///config/extensions
+[13:02:59] Completed initializing default profile extensions in extensions installation folder. file:///config/extensions
+[13:03:01] [::ffff:172.17.0.1][12f16b8a][ManagementConnection] New connection established.
+[13:03:01] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[13:03:01] [::ffff:172.17.0.1][de770492][ExtensionHostConnection] New connection established.
+[13:03:01] [::ffff:172.17.0.1][de770492][ExtensionHostConnection] Starting extension host process...
+[13:03:01] [::ffff:172.17.0.1][de770492][ExtensionHostConnection] <279> Launched Extension Host Process.
+[13:03:02] [::ffff:172.17.0.1][de770492][ExtensionHostConnection] <279> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[IPC Library: Agent Host] Agent host server listening on /tmp/vscode-ipc-6b024fa4-780f-4c88-a132-806ed66617c6.sock
+[13:03:02] ServerAgentHostManager: agent host started
+[13:03:02] [AgentHostChannel] Opening upstream to /tmp/vscode-ipc-6b024fa4-780f-4c88-a132-806ed66617c6.sock
+[13:03:48] [::ffff:172.17.0.1][12f16b8a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:03:48] [::ffff:172.17.0.1][de770492][ExtensionHostConnection] <279> Extension Host Process exited with code: 0, signal: null.
+[13:03:49] [::ffff:172.17.0.1][fd1f5cd1][ManagementConnection] New connection established.
+[13:03:49] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[13:03:49] [AgentHostChannel] Opening upstream to /tmp/vscode-ipc-6b024fa4-780f-4c88-a132-806ed66617c6.sock
+[13:03:49] [::ffff:172.17.0.1][f6899e6d][ExtensionHostConnection] New connection established.
+[13:03:49] [::ffff:172.17.0.1][f6899e6d][ExtensionHostConnection] Starting extension host process...
+[13:03:49] [::ffff:172.17.0.1][f6899e6d][ExtensionHostConnection] <439> Launched Extension Host Process.
+[13:03:49] [::ffff:172.17.0.1][f6899e6d][ExtensionHostConnection] <439> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[13:04:37] [::ffff:172.17.0.1][db6c0de6][ManagementConnection] New connection established.
+[13:04:38] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[13:04:38] [AgentHostChannel] Opening upstream to /tmp/vscode-ipc-6b024fa4-780f-4c88-a132-806ed66617c6.sock
+[13:04:38] [::ffff:172.17.0.1][a81e45e9][ExtensionHostConnection] New connection established.
+[13:04:38] [::ffff:172.17.0.1][a81e45e9][ExtensionHostConnection] Starting extension host process...
+[13:04:38] [::ffff:172.17.0.1][a81e45e9][ExtensionHostConnection] <550> Launched Extension Host Process.
+[13:04:38] [::ffff:172.17.0.1][a81e45e9][ExtensionHostConnection] <550> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[2026-09-01T20:05:47.946Z] info  code-server 4.135.0 de89acbcdce9d9b870008a270c9f6466993d91f4
+[2026-09-01T20:05:47.947Z] info  Using user-data-dir /config/data
+[2026-09-01T20:05:47.957Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-09-01T20:05:47.958Z] info  HTTP server listening on http://[::]:8443/
+[2026-09-01T20:05:47.958Z] info    - Authentication is disabled
+[2026-09-01T20:05:47.958Z] info    - Not serving HTTPS
+[2026-09-01T20:05:47.958Z] info  Session server listening on /config/data/code-server-ipc.sock
+[13:05:50] 
+
+
+
+
+[reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[13:05:50] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: /tmp/vscode-ipc-8f62c3b7-bc7a-4e77-9977-1c6bef5937e9.sock)
+[13:05:50] Extension host agent started.
+[2026-09-01T20:11:29.775Z] info  code-server 4.135.0 de89acbcdce9d9b870008a270c9f6466993d91f4
+[2026-09-01T20:11:29.775Z] info  Using user-data-dir /config/data
+[2026-09-01T20:11:29.786Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-09-01T20:11:29.786Z] info  HTTP server listening on http://[::]:8443/
+[2026-09-01T20:11:29.786Z] info    - Authentication is disabled
+[2026-09-01T20:11:29.786Z] info    - Not serving HTTPS
+[2026-09-01T20:11:29.786Z] info  Session server listening on /config/data/code-server-ipc.sock
+[13:11:30] 
+
+
+
+
+[reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[13:11:30] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: /tmp/vscode-ipc-ab34482d-3598-4418-871d-dc13b89792f1.sock)
+[13:11:30] Extension host agent started.
+[13:11:33] [::ffff:172.17.0.1][781db6ca][ManagementConnection] New connection established.
+[13:11:33] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[13:11:33] [::ffff:172.17.0.1][c85cc391][ExtensionHostConnection] New connection established.
+[13:11:33] [::ffff:172.17.0.1][c85cc391][ExtensionHostConnection] Starting extension host process...
+[13:11:33] [::ffff:172.17.0.1][c85cc391][ExtensionHostConnection] <269> Launched Extension Host Process.
+[13:11:33] [::ffff:172.17.0.1][c85cc391][ExtensionHostConnection] <269> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[IPC Library: Agent Host] Agent host server listening on /tmp/vscode-ipc-ab34482d-3598-4418-871d-dc13b89792f1.sock
+[13:11:33] ServerAgentHostManager: agent host started
+[13:11:33] [AgentHostChannel] Opening upstream to /tmp/vscode-ipc-ab34482d-3598-4418-871d-dc13b89792f1.sock
+[13:11:46] [::ffff:172.17.0.1][781db6ca][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:11:46] [::ffff:172.17.0.1][c85cc391][ExtensionHostConnection] <269> Extension Host Process exited with code: 0, signal: null.
+[13:11:48] [::ffff:172.17.0.1][cea08046][ManagementConnection] New connection established.
+[13:11:48] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[13:11:48] [AgentHostChannel] Opening upstream to /tmp/vscode-ipc-ab34482d-3598-4418-871d-dc13b89792f1.sock
+[13:11:48] [::ffff:172.17.0.1][4d39b280][ExtensionHostConnection] New connection established.
+[13:11:48] [::ffff:172.17.0.1][4d39b280][ExtensionHostConnection] Starting extension host process...
+[13:11:48] [::ffff:172.17.0.1][4d39b280][ExtensionHostConnection] <350> Launched Extension Host Process.
+[13:11:48] [::ffff:172.17.0.1][4d39b280][ExtensionHostConnection] <350> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[13:11:51] [::ffff:172.17.0.1][35214e30][ManagementConnection] New connection established.
+[13:11:51] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[13:11:51] [AgentHostChannel] Opening upstream to /tmp/vscode-ipc-ab34482d-3598-4418-871d-dc13b89792f1.sock
+[13:11:52] [::ffff:172.17.0.1][c713b605][ExtensionHostConnection] New connection established.
+[13:11:52] [::ffff:172.17.0.1][c713b605][ExtensionHostConnection] Starting extension host process...
+[13:11:52] [::ffff:172.17.0.1][c713b605][ExtensionHostConnection] <385> Launched Extension Host Process.
+[13:11:52] [::ffff:172.17.0.1][c713b605][ExtensionHostConnection] <385> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
